@@ -32,7 +32,7 @@ const Home: React.FC = () => {
           style={{ width: '90%', maxWidth: '400px', height: 'auto' }}
         >
           <h2
-            className="h4 mb-2" // Reduced margin-bottom here
+            className="h4 mb-0"
             style={{
               fontFamily: "'Kameron', serif",
               fontSize: '2rem',
@@ -43,10 +43,10 @@ const Home: React.FC = () => {
           <img
             src={catImage}
             alt="Cat with glasses"
-            className="rounded mb-2" // Reduced margin-bottom here
-            style={{ width: '300px', height: 'auto' }}
+            className="rounded mb-2"
+            style={{ width: '200px', height: 'auto' }}
           />
-          <div className="d-grid gap-2 col-8 mx-auto"> {/* Reduced gap between buttons */}
+          <div className="d-grid gap-2 col-8 mx-auto">
             <button
               onClick={handleRegisterClick}
               className="btn btn-primary"
