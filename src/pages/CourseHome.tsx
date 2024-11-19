@@ -177,14 +177,14 @@ const CourseHome: React.FC = () => {
                       <div>
                       <button
                         className="btn btn-sm"
-                        style={{ backgroundColor: '#6193A9', color: '#fff' }}
+                        style={{ backgroundColor: '#6193A9', color: '#fff', marginRight: '5px' }}
                         onClick={() => handleClassSelect(course)}
                       >
                         Select
                       </button>
                         <button
                           className="btn btn-sm"
-                          style={{ backgroundColor: 'red', color: '#fff' }}                          
+                          style={{ backgroundColor: '#d9534f', color: '#fff' }}                          
                           onClick={() => handleDeleteClick(course)}
                         >
                           Delete

@@ -62,7 +62,17 @@ const SchoolSearchModal: React.FC<SchoolSearchModalProps> = ({ onClose, onSelect
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button onClick={handleSearch} className="btn btn-primary mb-3">Search</button>
+            <button
+              onClick={handleSearch}
+              className="btn mb-3"
+              style={{
+                backgroundColor: '#6193A9', // Custom background color
+                color: '#FFFFFF',           // White text color
+                borderColor: '#6193A9',     // Matching border color
+              }}
+            >
+              Search
+            </button>
             {error && <div className="alert alert-danger">{error}</div>}
             <ul className="list-group">
                 {schools.map((school) => (
